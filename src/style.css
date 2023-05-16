@@ -1,111 +1,138 @@
-*{
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    
+
 }
-body{
-    background-color:hsl(0, 0%, 98%);
-    
-} 
-.main-heading{
-    margin: 100px;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
+
+body {
+    background-color: hsl(0, 0%, 98%);
+
 }
-.main-heading .container .box .header{
+
+.main-heading {
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-heading .container .box .header {
     text-align: center;
 }
 
-.main-heading .container .box .header h4{
+.main-heading .container .box .header h4 {
     font-size: 29px;
     font-weight: inherit;
     color: hsl(229, 6%, 66%);
 }
-.main-heading .container .box .header h2{
+
+.main-heading .container .box .header h2 {
     font-size: 30px;
 }
-.main-heading .container .box .header p{
+
+.main-heading .container .box .header p {
     font-size: 16px;
     line-height: 1.7;
     color: hsl(229, 6%, 66%);
-    margin: 30px 375px;
-}
-@media(max-width:767px){
-    .main-heading .container .box .header p{
-        margin: 30px 125px;
-    }
+    max-width: 45%;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
- 
-.main-heading .container .box .main{
+
+.main-heading .container .box .main {
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     align-items: center;
-    margin: 40px 205px;
-   
+    margin-top: 30px;
+
 }
 
-@media(max-width:767px){
-    .main-heading .container .box .main{
-        padding: 0 85px;
-        margin: 55px;
-        grid-template-columns: repeat(1 , 1fr);
-       
-       
+@media(max-width:1280px) {
+    .main-heading .container .box .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-.main-heading .container .box .main p{
-    font-size: 10px;
+.main-heading .container .box .main p {
+    font-size: 15px;
     line-height: 1.7;
     margin-top: 15px;
-    color:hsl(229, 6%, 66%);
+    color: hsl(229, 6%, 66%);
 }
-.main-heading .container .box .main img{
-    transform: translate(148px, 20px);
-}
-.main-heading .container .box .main .middele{
+
+
+
+.main-heading .container .box .main .middele {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
+.main-heading .container .box .main .one,
+.main-heading .container .box .main .two,
+.main-heading .container .box .main .three,
+.main-heading .container .box .main .foure {
+    height: 240px;
+    width: 400px;
+    position: relative;
+}
 
-.main-heading .container .box .main .one{
+@media(max-width:767px) {
+
+    .main-heading .container .box .main .one,
+    .main-heading .container .box .main .two,
+    .main-heading .container .box .main .three,
+    .main-heading .container .box .main .foure {
+        height: 240px;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.main-heading .container .box .main img {
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+}
+
+
+.main-heading .container .box .main .one {
     border-top: 3px solid hsl(180, 62%, 55%);
     border-radius: 5px;
     padding: 30px;
     background-color: white;
     box-shadow: 2px 10px 4px rgba(179, 231, 247, 0.3);
 }
-.main-heading .container .box .main .two{
+
+.main-heading .container .box .main .two {
     border-top: 3px solid hsl(0, 78%, 62%);
     border-radius: 5px;
     padding: 30px;
     background-color: white;
     box-shadow: 2px 10px 4px rgba(179, 231, 247, 0.3);
 }
-.main-heading .container .box .main .three{
-    border-top: 3px solid  hsl(34, 97%, 64%);
+
+.main-heading .container .box .main .three {
+    border-top: 3px solid hsl(34, 97%, 64%);
     background-color: white;
     border-radius: 5px;
     padding: 30px;
     box-shadow: 2px 10px 4px rgba(179, 231, 247, 0.3);
 }
-.main-heading .container .box .main .foure{
+
+.main-heading .container .box .main .foure {
     border-top: 3px solid hsl(212, 86%, 64%);
     background-color: white;
-border-radius: 5px;
-padding: 30px;
-box-shadow: 2px 10px 4px rgba(179, 231, 247, 0.3);
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 2px 10px 4px rgba(179, 231, 247, 0.3);
 }
